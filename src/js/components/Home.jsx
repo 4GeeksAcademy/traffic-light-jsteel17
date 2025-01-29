@@ -8,9 +8,9 @@ const Home = () => {
          <div>
              <div className="background"></div>
              <div className = "traffic_light">
-                 <div onClick={() => setColor("red")} className={"light red" + (color === "red" ? "off" : "" )}></div>
-                 <div onClick={() => setColor("yellow")} className={"light yellow" + (color === "yellow" ? "off" : "" )}></div>
-                 <div onClick={() => setColor("green")} className={"light green" + (color === "green" ? "off" : "" )}></div>
+                 <div onClick={() => setColor("red")} className={"light " + (color === "red" ? "red" : "" )}></div>
+                 <div onClick={() => setColor("yellow")} className={"light " + (color === "yellow" ? "yellow" : "" )}></div>
+                 <div onClick={() => setColor("green")} className={"light " + (color === "green" ? "green" : "" )}></div>
              </div>
          </div>
      );
